@@ -34,17 +34,9 @@
           "title": "film",
           "signature": {
             "parameters": {
-              "title": {
-                "required": true
-              },
-              "opening_crawl": {
-                "required": true
-              },
-              "director": {
-                "required": true
-              },
-              "producer": {
-                "required": true
+              "ID": {
+                "required": true,
+                "renameTo": "film_ID"
               }
             },
             "additionalParameters": "ignored"
@@ -149,7 +141,8 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Film"
+              "contextPath": "/Film",
+              "allowDeepLinking": true
             }
           }
         }

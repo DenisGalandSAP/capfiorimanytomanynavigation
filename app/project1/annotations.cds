@@ -5,9 +5,13 @@ annotate service.Film2People with @(UI: {
     LineItem           : [
         {
             $Type         : 'UI.DataFieldWithIntentBasedNavigation',
-            Value         : film.title,
+            Value         : film.ID,
             SemanticObject: 'film',
-            Action        : 'manage'
+            Action        : 'manage',
+        // Mapping       : {$value: [{
+        //     LocalProperty         : ,
+        //     SemanticObjectProperty: 'ID',
+        // }, ], }
         },
         {
             $Type                  : 'UI.DataField',
